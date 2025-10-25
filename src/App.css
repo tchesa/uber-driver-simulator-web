@@ -1,6 +1,6 @@
 main {
-  width: 100svw;
-  height: 100svh;
+  width: 100dvw;
+  height: 100dvh;
   position: relative;
 }
 
@@ -8,8 +8,8 @@ img#map {
   position: absolute;
   left: 0;
   top: 0;
-  width: 100svw;
-  height: 100svh;
+  width: 100dvw;
+  height: 100dvh;
   object-fit: cover;
 }
 
