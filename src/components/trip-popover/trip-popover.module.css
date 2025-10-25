@@ -1,0 +1,124 @@
+.TripPopover {
+  border: 2px solid black;
+  border-radius: 6px;
+  padding: 8px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  line-height: 1;
+}
+
+.TripPopover .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.TripPopover .category {
+  background-color: black;
+  color: white;
+  display: inline-block;
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 2px 8px;
+  font-weight: 600;
+}
+
+.TripPopover .dismissButton {
+  border: 0 none;
+  overlay: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 999px;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.TripPopover .dismissButton > svg {
+  width: 16px;
+  height: 16px;
+}
+
+.TripPopover .dismissButton:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.TripPopover .dismissButton:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.TripPopover .price {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.TripPopover .userInfo {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.TripPopover .userStars {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.TripPopover .userInfo svg {
+  width: 12px;
+  height: 12px;
+}
+
+.TripPopover .userInfo > div > span {
+  font-size: 14px;
+}
+
+.TripPopover .userInfo .userStars > span {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.TripPopover .stops {
+  list-style: none;
+  margin: 0;
+  padding-left: 24px;
+}
+
+.TripPopover .stopDistance,
+.TripPopover .stopLocation {
+  font-size: 12px;
+  display: block;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.TripPopover .stopLocation {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.TripPopover .stop {
+  position: relative;
+}
+
+.TripPopover .stopBullet {
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  top: 22.5px;
+  left: -16.5px;
+}
+
+.TripPopover .stopLine {
+  position: absolute;
+  border-left: 1px solid black;
+  height: 100%;
+  top: 27px;
+  left: -12px;
+}
+
+.TripPopover .stop:last-child .stopLine {
+  display: none;
+}
