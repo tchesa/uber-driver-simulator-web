@@ -37,7 +37,7 @@ const TripPopover = ({ className, id, onDismiss }: Props) => {
           <BiX />
         </button>
       </div>
-      <span className={styles.price}>${priceRef.current.toFixed(2)}</span>
+      <span className={styles.price}>{`$${priceRef.current.toFixed(2)}`}</span>
       <div className={styles.userInfo}>
         <div className={styles.userStars}>
           <BiSolidStar />
