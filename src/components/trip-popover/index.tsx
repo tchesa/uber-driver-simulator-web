@@ -49,13 +49,13 @@ const TripPopover = ({ className, id, onDismiss }: Props) => {
           [
             `${Math.round(pickupDistanceRef.current)} mins (${(
               pickupDistanceRef.current * 1.60934
-            ).toFixed(1)} mi) away`,
+            ).toFixed(1)} km) away`,
             pickupLocationRef.current,
           ],
           [
             `${Math.round(dropoffDistanceRef.current)} mins (${(
               dropoffDistanceRef.current * 1.60934
-            ).toFixed(1)} mi) trip`,
+            ).toFixed(1)} km) trip`,
             dropoffLocationRef.current,
           ],
         ].map(([distance, location], index) => (
